@@ -1,23 +1,22 @@
 import random
-# The lists
-destinations = ['London', 'Japan', 'Costa Rica', 'North Korea', 'a literal trash can']
-restaurants = ['Ramen Hakata', '24 Hour Pizza', 'some random-ass chinese place', 'the dumpster behind the Waffle House']
-transportation = ['a bird', 'a plane', 'Superman', 'a rental car', 'a stolen car', 'a train', 'walking', 'getting shot out of a cannon', 'a TIE fighter']
-entertainments = ['bowling', 'gaming', 'staying home', 'D&D', 'just suddenly dying', 'gladiator duels', 'deafening flatulence']
 # The functions
 def random_destination():
+    destinations = ['London', 'Japan', 'Costa Rica', 'North Korea', 'a literal trash can']
     choice = random.choice(destinations)
     return choice
 
 def random_restaurant():
+    restaurants = ['Ramen Hakata', '24 Hour Pizza', 'some random-ass chinese place', 'the dumpster behind the Waffle House']
     choice2 = random.choice(restaurants)
     return  choice2
 
 def random_transportation():
+    transportation = ['a bird', 'a plane', 'Superman', 'a rental car', 'a stolen car', 'a train', 'walking', 'getting shot out of a cannon', 'a TIE fighter']
     choice3 = random.choice(transportation)
     return choice3
 
 def random_entertainment():
+    entertainments = ['bowling', 'gaming', 'staying home', 'D&D', 'just suddenly dying', 'gladiator duels', 'deafening flatulence']
     choice4 = random.choice(entertainments)
     return choice4
 
