@@ -1,9 +1,9 @@
 import random
 # The lists
 destinations = ['London', 'Japan', 'Costa Rica', 'North Korea', 'a literal trash can']
-restaurants = ['Ramen Hakata', '24 Hour Pizza' 'some random-ass chinese place', 'dumpster behind the Waffle House']
-transportation = ['a bird', 'a plane', 'Superman', 'a rental car', 'a stolen car' 'a train', 'walking', 'getting shot out of a cannon', 'a TIE fighter']
-entertainments = ['bowling', 'gaming', 'staying home', 'D&D', 'just die', 'gladiator duels', 'deafening flatulence']
+restaurants = ['Ramen Hakata', '24 Hour Pizza', 'some random-ass chinese place', 'the dumpster behind the Waffle House']
+transportation = ['a bird', 'a plane', 'Superman', 'a rental car', 'a stolen car', 'a train', 'walking', 'getting shot out of a cannon', 'a TIE fighter']
+entertainments = ['bowling', 'gaming', 'staying home', 'D&D', 'just suddenly dying', 'gladiator duels', 'deafening flatulence']
 # The functions
 def random_destination():
     choice = random.choice(destinations)
@@ -49,3 +49,15 @@ while user_feedback == 'n':
     mode23 = random_transportation()
     print(f"Ah, okay, then how about {mode23}? y/n:")
     user_feedback = input()
+print(f"Right, okay, last question: entertainment. Would you like to partake in {entertainment}? y/n")
+user_feedback = input()
+while user_feedback == 'n':
+    entertainment = random_entertainment()
+    print(f"Ah, okay, then how about {entertainment}? y/n:")
+    user_feedback = input()
+print(f"Okay, so, you're going to go {destination} via {mode23} to eat at {restaurant} before engaging in some {entertainment}. Everything look good? y/n")
+user_feedback = input()
+if user_feedback == 'n':
+    print("Guess you're staying home then.")
+else:
+    print(f"Great! So you're going to {destination} via {mode23} to eat at {restaurant} before engaging in some {entertainment}. Enjoy your trip!")
