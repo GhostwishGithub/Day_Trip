@@ -63,34 +63,10 @@ mode23 = random_transportation()
 entertainment = random_entertainment()
 
 destination_picker(destination)
-# print(f"Looks like you're going to {destination}. That sound good to you? y/n:")
-# user_feedback = input()
-# while user_feedback == 'n':
-#     destination = random_destination()
-#     print(f"Ah, okay, then how about {destination}? y/n:")
-#     user_feedback = input()
 restaurant_picker(restaurant)
-# print(f"Great. Now that's settled, it seems you'll be eating at {restaurant}. Sound good? y/n")
-# user_feedback = input()
-# while user_feedback == 'n':
-#     restaurant = random_restaurant()
-#     print(f"Ah, okay, then how about {restaurant}? y/n:")
-#     user_feedback = input()
 transportation_picker(mode23)
-# print(f"Okay, hope you don't get tape worms. Now, as for transporation, how does {mode23} sound? y/n")
-# user_feedback = input()
-# while user_feedback == 'n':
-#     mode23 = random_transportation()
-#     print(f"Ah, okay, then how about {mode23}? y/n:")
-#     user_feedback = input()
 entertainment_picker(entertainment)
-# print(f"Right, okay, last question: entertainment. Would you like to partake in {entertainment}? y/n")
-# user_feedback = input()
-# while user_feedback == 'n':
-#     entertainment = random_entertainment()
-#     print(f"Ah, okay, then how about {entertainment}? y/n:")
-#     user_feedback = input()
-user_feedback = 'n' #this feels ugly and stupid, but I'm hitting a wall here
+user_feedback = 'n'
 while user_feedback == 'n':
     print(f"Okay, so, you're going to go {destination} via {mode23} to eat at {restaurant} before engaging in some {entertainment}. Everything look good? y/n")
     user_feedback = input()
