@@ -55,7 +55,7 @@ def entertainment_picker(entertainment):
         print(f"Ah, okay, then how about {entertainment}? y/n:")
         user_feedback = input()
     return(entertainment)
-def basically_the_whole_program():
+def main():
     destination = random_destination()
     restaurant = random_restaurant()
     mode23 = random_transportation()
@@ -70,17 +70,22 @@ def basically_the_whole_program():
         user_feedback = input()
         if user_feedback == 'n':
             print(f"You know, I would have slapped most users clear across the room by now, so you better be glad you're cute. Allright. Using 1-4 and no bananas, tell me which one you want to redo: 1. {destination} 2. {restaurant} 3. {mode23} 4. {entertainment}")
-            user_feedback2 = input()
-            if user_feedback2 == '1':
-                destionation = destination_picker(destination)
-            elif user_feedback2 == '2':
+            user_feedback = input()
+            if user_feedback == '1':
+                destination = destination_picker(destination)
+                user_feedback = 'n'
+            elif user_feedback == '2':
                 restaurant = restaurant_picker(restaurant)
-            elif user_feedback2 == '3':
+                user_feedback = 'n'
+            elif user_feedback == '3':
                 mode23 = transportation_picker(mode23)
-            elif user_feedback2 == '4':
+                user_feedback = 'n'
+            elif user_feedback == '4':
                 entertainment = entertainment_picker(entertainment)
+                user_feedback = 'n'
             else:
                 print("THAT'S IT I QUIT!!!!")
+                user_feedback = 'n'
     else:
         print(f"Great! So you're going to {destination} via {mode23} to eat at {restaurant} before engaging in some {entertainment}. Enjoy your trip!")
-basically_the_whole_program()
+main()
